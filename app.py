@@ -1,6 +1,7 @@
 import streamlit as st 
 import pickle 
-import numpy as np 
+import numpy as np
+import sklearn
 
 # Load trained models 
 diabetes_model = pickle.load(open('diabetes_model.pkl', 'rb')) 
