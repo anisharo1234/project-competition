@@ -4,8 +4,9 @@ import numpy as np
 
 # Load trained models 
 diabetes_model = pickle.load(open('diabetes_model.pkl', 'rb')) 
-heart_disease_model = pickle.load(open('heart_disease_model.pkl', 'rb')) 
+heart_model = pickle.load(open('heart_model.pkl', 'rb')) 
 parkinsons_model = pickle.load(open('parkinsons_model.pkl', 'rb')) 
+breat_cancer = pickle.load(open('breast_cancer_.pkl', 'rb')) 
 
 # Streamlit page configuration 
 st.set_page_config(page_title="Multiple Disease Prediction", layout="centered") 
@@ -14,7 +15,7 @@ st.title("Multiple Disease Prediction")
 # Sidebar for disease selection 
 st.sidebar.title("Select a Disease") 
 disease = st.sidebar.selectbox("Choose a disease to predict:", 
-                               ["Diabetes", "Heart Disease", "Parkinson's"]) 
+                               ["Diabetes", "Heart", "Parkinson's"]) 
 
 st.subheader(f"Predict {disease}") 
 
