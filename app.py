@@ -16,8 +16,7 @@ st.title("Multiple Disease Prediction")
 # Sidebar for disease selection 
 st.sidebar.title("Select a Disease") 
 disease = st.sidebar.selectbox("Choose a disease to predict:", 
-                               ["Diabetes", "Heart", "Parkinson's,"breast-cancer
-                               "]) 
+                               ["Diabetes", "Heart", "Parkinson's,"breast-cancer"]) 
 
 st.subheader(f"Predict {disease}") 
 
