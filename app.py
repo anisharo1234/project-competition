@@ -5,7 +5,7 @@ import numpy as np
 # Load trained models
 diabetes_model = pickle.load(open('diabetes_model.pkl', 'rb'))
 heart_model = pickle.load(open('heart_model.pkl', 'rb'))
-parkinsons_model = pickle.load(open('parkinsons_model.pkl', 'rb'))
+parkinsons_model = pickle.load(open('parkinson_model.pkl', 'rb'))
 breast_cancer_model = pickle.load(open('breast_cancer.pkl', 'rb'))
 
 # Streamlit page configuration
