@@ -1,7 +1,5 @@
-import os
-os.system("pip install scikit-learn")
 streamlit
 numpy
 pandas
-scikit-learn
+sklearn
 joblib
