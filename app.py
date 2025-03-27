@@ -5,7 +5,7 @@ import numpy as np
 # Load trained models
 diabetes_model = pickle.load(open('diabetes_model.pkl', 'rb'))
 heart_model = pickle.load(open('heart_model.pkl', 'rb'))
-parkinsons_model = pickle.load(open('parkinsons_model.pkl', 'rb'))
+parkinson_model = pickle.load(open('parkinsons_model.pkl', 'rb'))
 breast_cancer_model = pickle.load(open('breast_cancer.pkl', 'rb'))
 
 # Streamlit page configuration
@@ -53,7 +53,7 @@ elif disease == "Heart Disease":
                             thalach, exang, oldpeak, slope, ca, thal]])
     model = heart_model
 
-elif disease == "Parkinson's":
+elif disease == "Parkinson":
     fo = st.number_input("MDVP: Fo(Hz)", min_value=0.0, format="%.2f")
     fhi = st.number_input("MDVP: Fhi(Hz)", min_value=0.0, format="%.2f")
     flo = st.number_input("MDVP: Flo(Hz)", min_value=0.0, format="%.2f")
@@ -74,7 +74,7 @@ elif disease == "Parkinson's":
                             nhr, hnr, rpde, dfa, spread1, spread2, d2, ppe]])
     model = parkinsons_model
 
-elif disease == "Breast Cancer":
+elif disease == "Breast_Cancer":
     radius_mean = st.number_input("Radius Mean", min_value=0.0, format="%.2f")
     texture_mean = st.number_input("Texture Mean", min_value=0.0, format="%.2f")
     perimeter_mean = st.number_input("Perimeter Mean", min_value=0.0, format="%.2f")
