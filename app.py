@@ -74,7 +74,7 @@ elif disease == "Parkinson":
                             nhr, hnr, rpde, dfa, spread1, spread2, d2, ppe]])
     model = parkinsons_model
 
-elif disease == "Breast_Cancer":
+elif disease == "Breast-Cancer":
     radius_mean = st.number_input("Radius Mean", min_value=0.0, format="%.2f")
     texture_mean = st.number_input("Texture Mean", min_value=0.0, format="%.2f")
     perimeter_mean = st.number_input("Perimeter Mean", min_value=0.0, format="%.2f")
